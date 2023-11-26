@@ -35,20 +35,47 @@ Write the detailed procedure here
 ## Program:
 /*
 Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: DINESHKARTHIK N
+RegisterNumber:  23013921
 */
+## Halfsubtractor:
+module Halfsubtractor(output b,d,input x,y);
+assign d = x^y;
+assign b = ~x&y;
+endmodule
+
+## Fullsubtractor:
+module Fullsubtractor(output d,b,input x,y,z);
+assign d = x^y^z;
+assign b = ~x&(y^z)|y&z;
+endmodule
 
 ## Output:
+##  RTL realization
+##Halfsubtractor:
+![image](https://github.com/dinesh2068/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/151390189/a78e0d1a-8971-443e-96dd-e628bd542c55)
+
+##Fullsubtractor:
+![image](https://github.com/dinesh2068/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/151390189/efc41af8-6e8c-4bcf-9769-d168881d8bc1)
+
 
 ## Truthtable
+##Halfsubtractor:
+![image](https://github.com/dinesh2068/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/151390189/db6b6337-7e32-41ce-a873-dd528df8fc2d)
+
+##Fullsubtractor:
+![image](https://github.com/dinesh2068/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/151390189/f5faf66f-b003-43e8-a552-b17930b7a47d)
+
+## Timing diagram
+##Halfsubtractor:
+![image](https://github.com/dinesh2068/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/151390189/e119d7b3-01f8-42ab-b398-59cde99d2e7c)
+
+##Fullsubtractor:
+![image](https://github.com/dinesh2068/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/151390189/333178d0-c21d-4459-9835-10a26a4663de)
 
 
 
-##  RTL realization
-
-
-## Timing diagram 
+ 
 
 ## Result:
 Thus the half subtractor and full subtractor circuits are designed and the truth tables is verified using quartus software.
